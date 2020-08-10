@@ -18,6 +18,7 @@ package org.bitcoinj.wallet;
 
 import org.bitcoinj.core.ECKey;
 import org.bitcoinj.script.Script;
+import org.bitcoinj.script.Script.ScriptType;
 
 import javax.annotation.Nullable;
 
@@ -33,12 +34,12 @@ public interface KeyBag {
      * @param pubKeyHash
      *            hash of the keypair to look for
      * @param scriptType
-     *            only look for given usage (currently {@link Script.ScriptType#P2PKH} or
-     *            {@link Script.ScriptType#P2WPKH}) or {@code null} if we don't care
+     *            only look for given usage (currently {@link ScriptType#P2PKH})
+     *            or {@code null} if we don't care
      * @return found key or null if no such key was found.
      */
     @Nullable
-    ECKey findKeyFromPubKeyHash(byte[] pubKeyHash, @Nullable Script.ScriptType scriptType);
+    ECKey findKeyFromPubKeyHash(byte[] pubKeyHash, @Nullable ScriptType scriptType);
 
     /**
      * Locates a keypair from the keychain given the raw public key bytes.

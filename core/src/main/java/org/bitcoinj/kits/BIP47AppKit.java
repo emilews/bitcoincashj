@@ -72,8 +72,8 @@ import static org.bitcoinj.utils.BIP47Util.getSendAddress;
  *
  * <p>It produces two files in a designated directory. The directory name is the coin name. and is created in workingDirectory: </p>
  * <ul>
- *     <il>The .spvchain (blockstore): maintains a maximum # of headers mapped to memory (5000)</il>
- *     <il>The .wallet: stores the wallet with txs, can be encrypted, storing keys</il>
+ *     <li>The .spvchain (blockstore): maintains a maximum # of headers mapped to memory (5000)</li>
+ *     <li>The .wallet: stores the wallet with txs, can be encrypted, storing keys</li>
  * </ul>
  *
  * <p>By using this kit, your wallet will import keys for bip 47 payment addresses, when a BIP 47

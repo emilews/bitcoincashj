@@ -22,10 +22,10 @@ import org.bouncycastle.crypto.params.ECDomainParameters;
 import org.bouncycastle.math.ec.ECPoint;
 
 /**
- * p>A {@link BIP47PaymentAddress} is derived for account deposits in a bip47 channel. It is used by a recipient's bip47 wallet to derive and watch deposits. It
+ * <p>A {@link BIP47PaymentAddress} is derived for account deposits in a bip47 channel. It is used by a recipient's bip47 wallet to derive and watch deposits. It
  * is also used by a sender's bip47 wallet to calculate the next addresses to send a deposit to.</p>
  *
- * The BIP47 BIP47PaymentAddress is at the derivation path <pre>m / 47' / coin_type' / account_id' / idx' .</pre>. </p>
+ * <p>The BIP47 BIP47PaymentAddress is at the derivation path m / 47' / coin_type' / account_id' / idx' . </p>
  *
  * <p>Properties:</p>
  * <ul>

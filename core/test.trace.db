@@ -1,0 +1,4 @@
+08-09 17:05:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "SETTINGS" no encontrada
+Table "SETTINGS" not found; SQL statement:
+SELECT * FROM settings WHERE 1 = 2 [42102-167]
